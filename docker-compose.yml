@@ -31,3 +31,6 @@ services:
       - HTTPMODE=${httpmode}
     networks:
       - dokploy-network
+networks:
+  dokploy-network:
+    external: true
