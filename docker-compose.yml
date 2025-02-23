@@ -10,7 +10,7 @@ services:
       - MYSQL_USER=${dbUser}
       - MYSQL_PASSWORD=${dbPassword}
     volumes:
-      - "./ezxssdb:/var/lib/mysql"
+      - "../files/ezxssdb:/var/lib/mysql"
   ezxss:
     build:
       context: .
