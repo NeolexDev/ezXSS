@@ -11,6 +11,9 @@ services:
       - MYSQL_PASSWORD=${dbPassword}
     volumes:
       - "../files/ezxssdb:/var/lib/mysql"
+    networks:
+      - dokploy-network
+
   ezxss:
     build:
       context: .
@@ -26,3 +29,5 @@ services:
       - INSTALL_CERTIFICATE=${autoInstallCertificate}
       - DOMAIN=${domain}
       - HTTPMODE=${httpmode}
+    networks:
+      - dokploy-network
