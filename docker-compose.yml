@@ -5,7 +5,7 @@ services:
     image: mysql:latest
     restart: always
     environment:
-      - MYSQL_RANDOM_ROOT_PASSWORD=yes
+      - MYSQL_ROOT_PASSWORD=${dbPassword}
       - MYSQL_DATABASE=${dbName}
       - MYSQL_USER=${dbUser}
       - MYSQL_PASSWORD=${dbPassword}
