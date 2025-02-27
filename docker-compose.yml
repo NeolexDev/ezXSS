@@ -21,7 +21,7 @@ services:
       args:
         - USE_MAIL_ALERTS=${useMailAlerts}
     volumes:
-      - ../files/ezxss:/var/www/html
+      - .:/var/www/html
     restart: always
     depends_on:
       - ezxssdb
