@@ -20,7 +20,7 @@ services:
       - .:/var/www/html
     restart: always
     depends_on:
-      - ezxssdb-iks4os0ksogg84cc0s4gsoos
+      - ezxssdb
     environment:
       - INSTALL_CERTIFICATE=${autoInstallCertificate}
       - DOMAIN=${domain}
